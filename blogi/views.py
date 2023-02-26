@@ -19,12 +19,6 @@ def nayta_postaus(request, id):
     context = {'postaus': postaus}
     return render(request, 'blogi/postaus.html', context)
 
-def nayta_postaus(request, id):
-    postaus = Postaus.objects.get(id=id)
-    context = {"postaus": postaus}
-    return render(request, "blogi/postaus.html", context)
-
-
 def uusi_postaus(request):
     if request.method == "GET":
         # 1. Lomake näytetään ensimmäistä kertaa
