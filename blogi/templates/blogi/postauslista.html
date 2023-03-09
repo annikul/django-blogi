@@ -2,9 +2,9 @@
 
 {% block content %}
 <h1>Postaukset</h1>
-<ul>
+<ul class="list-group">
     {% for postaus in postaukset %}
-    <li>
+    <li class="list-group-item">
         <a href="{% url 'nayta_postaus' postaus.id %}">
             {{postaus}}
         </a>
