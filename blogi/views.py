@@ -42,5 +42,5 @@ def uusi_postaus(request):
 
         # Palautetaan uudelleenohjaus uuden Postaus-objektin URL:iin
         return redirect(url)
-   
+    
 
