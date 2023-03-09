@@ -127,3 +127,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# media-kansio ja sen sisältö. Laita vain eteen / ei taakse
+# / tarkoittaa että ignoraa vain juuresta "media" nimisen kansion, ei
+# jos teet muita media nimisiä tiedostoja. Jos laitat vain media niin ignoraa kaikki missä on media
+/media
