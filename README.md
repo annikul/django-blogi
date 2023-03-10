@@ -2,7 +2,7 @@
 
 Tässä repositoryssä on Django-harjoitteluprojekti, jota on koodattu alkuvuodesta 2023
 
-# Asennus
+## Asennus
 1. Tee Python-virtuaaliympäristö
 ```
 python3 -m venv venv
@@ -26,12 +26,12 @@ python3 manage.py createsuperuser
 ```
 - Käytä käyttäjätunnusta ja salasanaa, jotka muistat helposti. Esim. "admin" ja "admin".
 
-# Kehitysympäristön käynnistäminen
+## Kehitysympäristön käynnistäminen
 Aja Djangon runservver komento:
 ```
 python3 manage.py runserver
 ```
-# Uusien Migraatioteidostojen tekeminen
+## Uusien Migraatioteidostojen tekeminen
 Kun teet muutoksia models.py-tiedostoon, niin model-muutokset pitää saada myös tietokantaan. Tähän käytetään migraatiotiedostoja. Tehtyjen muutosten pohjalta voi luoda uuden migraatiotiedoston komennolla:
 ```
 python3 manage.py makemigrations
