@@ -132,3 +132,6 @@ dmypy.json
 # / tarkoittaa että ignoraa vain juuresta "media" nimisen kansion, ei
 # jos teet muita media nimisiä tiedostoja. Jos laitat vain media niin ignoraa kaikki missä on media
 /media
+
+# staticfiles-kansio ja sen sisältö
+/staticfiles
