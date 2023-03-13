@@ -6,6 +6,10 @@
     {% for postaus in postaukset %}
     <li class="list-group-item">
         <a href="{% url 'nayta_postaus' postaus.id %}">
+            {% if postaus.kuva %}
+            <img src='{{postaus.kuva.url}}'width='auto' height='50'
+                class='img-thumbneil'/>
+               {% endif %} 
             {{postaus}}
         </a>
     </li>

@@ -16,11 +16,11 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Määritetään MEDIA ROOT, joka on tiedostopolku kansioon, jonka alle 
-# tallennetaan ladatut tiedostot.
+# tallennetaan ladatut tiedostot. Vasemmal oleva kansio
 MEDIA_ROOT = BASE_DIR / 'media'
 
 # Määritetään MEDIA URL. Se kertoo mikä lisätään ladattujen tiedostojen 
-# osoitteiden (URL) alkuun.
+# osoitteiden (URL) alkuun. Osoite muuttuu jos laitat vaikka media123
 MEDIA_URL = '/media/'
 
 # Quick-start development settings - unsuitable for production
