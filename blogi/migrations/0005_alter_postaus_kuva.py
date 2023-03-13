@@ -10,11 +10,6 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.AddField(
-            model_name='postaus',
-            name='ingressi',
-            field=models.TextField(blank=True),
-        ),
         migrations.AlterField(
             model_name='postaus',
             name='kuva',
