@@ -9,3 +9,8 @@ class Postaus(models.Model):
 
     def __str__(self):
         return self.otsikko
+    
+    def luo_ingressi(self):
+        if self.ingressi:
+            return self.ingeressi
+        return self.teksti[:50] + '...'
