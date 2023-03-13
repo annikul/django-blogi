@@ -39,7 +39,6 @@ RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 
 ALLOWED_HOSTS = [RENDER_EXTERNAL_HOSTNAME] if RENDER_EXTERNAL_HOSTNAME else[] 
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -87,7 +86,7 @@ WSGI_APPLICATION = 'koodausblogi.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-sqlite_db = sqlite:///db.sqlite3'
+sqlite_db = 'sqlite:///db.sqlite3'
 DATABASES = {
     'default': dj_database_url.config(default=sqlite_db, conn_max_age=600),
 }
