@@ -27,11 +27,11 @@ python3 manage.py createsuperuser
 - Käytä käyttäjätunnusta ja salasanaa, jotka muistat helposti. Esim. "admin" ja "admin".
 
 ## Kehitysympäristön käynnistäminen
-Aja Djangon runservver komento:
+Aja Djangon runserver komento:
 ```
 python3 manage.py runserver
 ```
-## Uusien Migraatioteidostojen tekeminen
+## Uusien Migraatiotiedostojen tekeminen
 Kun teet muutoksia models.py-tiedostoon, niin model-muutokset pitää saada myös tietokantaan. Tähän käytetään migraatiotiedostoja. Tehtyjen muutosten pohjalta voi luoda uuden migraatiotiedoston komennolla:
 ```
 python3 manage.py makemigrations
