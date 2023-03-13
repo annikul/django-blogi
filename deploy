@@ -7,4 +7,6 @@ pip install -r requirements.txt
 ./manage.py collectstatic --no-input
 ./manage.py migrate --no-input
 
+chmod +x create_admin_user.py
+
 ./create_admin_user.py
