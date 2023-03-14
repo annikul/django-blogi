@@ -13,5 +13,5 @@ class Postaus(models.Model):
     
     def luo_ingressi(self):
         if self.ingressi:
-            return self.ingeressi
+            return self.ingressi
         return self.teksti[:50] + '...'
