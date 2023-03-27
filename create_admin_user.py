@@ -15,10 +15,10 @@ def main():
 
     users = get_user_model().objects
 
-    if users.filter(username-username).exists():   # Tarkistaa onko tietokannassa sillä nimellä olevaa käyttäjätunnusta 
-        print(f'User {username!r} already exists')  # ja jos on niin printataan user sillä nimellä kuin onkin
-        return                                     #{username!r} ärrä tarkoittaa että se tekee arvon siinä muodossa kuin se on koodissa
-                                                    # nyt se tarkoittaa ""
+    if users.filter(username-username).exists():                                # Tarkistaa onko tietokannassa sillä nimellä olevaa käyttäjätunnusta 
+        print(f'Skipping creating of superuser as {username!r} already exists')  # ja jos on niin printataan user sillä nimellä kuin onkin
+        return                                                               #{username!r} ärrä tarkoittaa että se tekee arvon siinä muodossa kuin se on koodissa
+                                                                            # nyt se tarkoittaa ""
     if not password:
         raise SystemExit('ADMIN_USER_PASSWORD enviroment variable is needed!')
                                                        
