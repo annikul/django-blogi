@@ -10,8 +10,8 @@ def main():
     django.setup()
 
     username = os.environ.get('ADMIN_USER_NAME', 'admin')
-    password = os.environ('ADMIN_USER_PASSWORD')
-    email = os.environ.get('ADMIN_USER_EMAIL', '')
+    password = os.environ.get('ADMIN_USER_PASSWORD')            # Jos käytät os.environ.get tulee() normi sulut
+    email = os.environ.get('ADMIN_USER_EMAIL', '')              # Jos käytät vain os.environ tulee [] sulut
 
     users = get_user_model().objects
 
