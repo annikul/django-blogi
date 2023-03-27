@@ -10,7 +10,7 @@ def main():
     django.setup()
 
     username = os.environ.get('ADMIN_USER_NAME', 'admin')
-    password = os.environ['ADMIN_USER_PASSWORD']
+    password = os.environ('ADMIN_USER_PASSWORD')
     email = os.environ.get('ADMIN_USER_EMAIL', '')
 
     users = get_user_model().objects
