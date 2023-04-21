@@ -153,7 +153,7 @@ if DROPBOX_APP_KEY:
     DROPBOX_OAUTH2_TOKEN = os.environ['DROPBOX_OAUTH2_TOKEN']
     DROPBOX_OAUTH2_REFRESH_TOKEN = os.environ['DROPBOX_OAUTH2_REFRESH_TOKEN']
     # Aseta DropBox Djangon oletus-storageksi
-    DEFAULT_FILE_STORAGE ='storages.backends.dropbox.DropBoxStorage'
+    DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
 
 
 
